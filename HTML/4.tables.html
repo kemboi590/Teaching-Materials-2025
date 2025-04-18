@@ -1,0 +1,77 @@
+<!-- we will cover:
+ Table structure: <table>, <tr>, <td>, <th>
+
+Table attributes: border, cellspacing, colspan, rowspan
+ -->
+
+ <!-- HTML tables allow web developers to arrange data into rows and columns. -->
+
+ <table border="1" cellspacing="0"> <!-- Table with border and no spacing between cells -MEANS NO SPACE BETWEEN CELLS -->
+    <tr> <!-- Table row 1 -->
+        <th >Header 1</th> 
+        <th>Header 2</th> 
+        <th>Header 3</th> 
+    </tr>
+    <tr"> <!-- Table row 2 -->
+        <td>Data 1</td> <!-- Table data cell -->
+        <td>Data 2</td> <!-- Table data cell -->
+        <td>Data 3</td> <!-- Table data cell -->
+    </tr>
+
+    <tr> <!-- Table row 3 -->
+        <td>Data 4</td> <!-- Table data cell -->
+        <td>Data 5</td> <!-- Table data cell -->
+        <td>Data 6</td> <!-- Table data cell -->
+    </tr>
+ </table>
+
+
+
+
+
+<br> <br>
+ <!-- Styles to resize tables-->
+ <table border="1" cellspacing="0" style="width: 100%;"> <!-- Table with border and no spacing between cells -MEANS NO SPACE BETWEEN CELLS -->
+    <tr> <!-- Table row 1 -->
+        <th>Header 1</th> 
+        <th>Header 2</th> 
+        <th>Header 3</th> 
+    </tr>
+    <tr style="height: 100px;"> <!-- Table row 2 -->
+        <td >Data 1</td> <!-- Table data cell -->
+        <td>Data 2</td> <!-- Table data cell -->
+        <td>Data 3</td> <!-- Table data cell -->
+    </tr>
+
+    <tr style="height: 50px;"> <!-- Table row 3 -->
+        <td>Data 4</td> <!-- Table data cell -->
+        <td>Data 5</td> <!-- Table data cell -->
+        <td>Data 6</td> <!-- Table data cell -->
+    </tr>
+ </table>
+
+
+
+
+
+ <br> <br>
+<!-- colspan and rowspan -->
+ <table border="1" cellspacing="0"> <!-- Table with border and no spacing between cells -MEANS NO SPACE BETWEEN CELLS -->
+    <tr> <!-- Table row 1 -->
+        <th colspan="2">Header 1</th> 
+        <th>Header 2</th> 
+        <!-- <th>Header 3</th>  -->
+    </tr>
+    <tr"> <!-- Table row 2 -->
+        <td rowspan="2">Data 1</td> <!-- Table data cell -->
+        <td>Data 2</td> <!-- Table data cell -->
+        <td>Data 3</td> <!-- Table data cell -->
+    </tr>
+
+    <tr> <!-- Table row 3 -->
+        <!-- <td>Data 4</td>  -->
+        <td>Data 5</td> <!-- Table data cell -->
+        <td>Data 6</td> <!-- Table data cell -->
+    </tr>
+ </table>
+

@@ -1,0 +1,107 @@
+<!-- Basic Form -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+ </head>
+ <body>
+
+    <form>
+        <label for="name">Name:</label> <!-- Label for the input field with id "name" -->
+        <input type="text" id="name" name="name" required> <!-- Text input field with id and name "name" -->
+        <br><br> <!-- Line break for spacing -->
+
+        <label for="email">Email:</label> <!-- Label for the input field with id "email" -->
+        <input type="email" id="email" name="email" required> <!-- Email input field with id and name "email" -->
+        <br><br> <!-- Line break for spacing -->
+
+        <label for="password">Password:</label> <!-- Label for the input field with id "password" -->
+        <input type="password" id="password" name="password" required> <!-- Password input field with id and name "password" -->
+        <br><br> <!-- Line break for spacing -->
+
+        <input type="submit"> <!-- Submit button to send the form data -->
+    </form>
+    
+<br> <br> <br>
+
+     <!-- radio buttons -->
+      <form>
+        <input type="radio" name="language" id="language" value="html" checked> <!-- Radio button for HTML -->
+        <label for="html">HTML</label> <!-- Label for the HTML radio button -->
+        <br> <!-- Line break for spacing -->
+
+        <input type="radio" name="language" id="language" value="css"> <!-- Radio button for CSS -->
+        <label for="css">CSS</label> <!-- Label for the CSS radio button -->
+        <br>
+
+        <input type="radio" name="language" id="language" value="js"> <!-- Radio button for JavaScript -->
+        <label for="js">JavaScript</label> <!-- Label for the JavaScript radio button -->
+
+        <br> <!-- Line break for spacing -->
+
+        <input type="submit"> <!-- Submit button to send the form data -->
+
+      </form>
+
+
+<br> <br> <br>
+    
+        <!-- checkbox -->
+        <form>
+            <input type="checkbox" name="language" id="language" value="html" checked> <!-- Checkbox for HTML -->
+            <label for="html">HTML</label> <!-- Label for the HTML checkbox -->
+            <br> <!-- Line break for spacing -->
+    
+            <input type="checkbox" name="language" id="language" value="css"> <!-- Checkbox for CSS -->
+            <label for="css">CSS</label> <!-- Label for the CSS checkbox -->
+            <br>
+    
+            <input type="checkbox" name="language" id="language" value="js"> <!-- Checkbox for JavaScript -->
+            <label for="js">JavaScript</label> <!-- Label for the JavaScript checkbox -->
+    
+            <br> <!-- Line break for spacing -->
+    
+            <input type="submit" value="submit"> <!-- Submit button to send the form data -->
+    
+        </form>
+
+<br> <br> <br>
+
+<!-- Form Elements -->
+ <!--
+Text area
+input
+select
+button
+fieldset
+legend
+
+ -->
+
+ <form >
+    <fieldset> <!-- Fieldset to group related elements in the form -->
+        <legend>Additional Info</legend> <!-- defines a caption for the <fieldset> element. -->
+        <label for="message">Message:</label> <!-- Label for the textarea with id "message" -->
+        <textarea id="message" name="message" rows="4" cols="50"></textarea> <!-- Textarea for user input -->
+        <br><br> <!-- Line break for spacing -->
+    
+        <label for="country">Country:</label> <!-- Label for the select element with id "country" -->
+        <select id="country" name="country"> <!-- Dropdown list for country selection -->
+            <option value="usa">USA</option> <!-- Option for USA -->
+            <option value="canada">Canada</option> <!-- Option for Canada -->
+            <option value="uk">UK</option> <!-- Option for UK -->
+        </select>
+        <br><br> <!-- Line break for spacing -->
+    <button type="button" onclick="alert('I am clicked')"> Click Me</button>
+        <input type="submit" value="Submit"> <!-- Submit button to send the form data -->
+    </fieldset>
+
+ </form>
+
+<br> <br> <br>
+
+ </body>
+ </html>
+
