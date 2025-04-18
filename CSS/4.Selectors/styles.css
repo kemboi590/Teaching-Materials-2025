@@ -1,0 +1,31 @@
+/* universal selectors - used to apply styles to all elements */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h3{
+    text-align: center;
+    color: red;
+}
+
+#welcome{
+    background-color: lightblue;
+    padding: 20px;
+    margin: 20px;
+}
+
+.id-selector{
+    color: green;
+    padding-bottom: 8px;
+    text-decoration: underline;
+}
+
+.lorem-text{
+    color: blue;
+    font-size: 10px;
+    text-align: center;
+    font-style: italic;
+}
