@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+
+    <style>
+        .block {
+            display: block;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .inline {
+            display: inline;
+            background-color: lightgreen;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .none {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 
+    https://www.w3schools.com/Css/css_display_visibility.asp
+
+    Block-level Elements
+    Block-level elements are elements that take up the full width available, with a new line before and after the element.
+    Examples of block-level elements are <div>, <h1>, <p>, <form>, and <header>.
+    Inline Elements
+    Inline elements are elements that do not start on a new line and only take up as much width as necessary.
+    Examples of inline elements are <span>, <a>, <img>, and <strong>.
+
+        illustration:
+        display none, block, inline
+    -->
+
+        <h2>CSS Display Property</h2>
+        <p>The following examples demonstrate the `display` property:</p>
+    
+        <div class="block">I am a block-level element.</div>
+        <span class="inline">I am an inline element.</span>
+        <span class="inline">I am another inline element.</span>
+        <div class="none">You cannot see me because my display is set to none.</div>
+</body>
+</html>

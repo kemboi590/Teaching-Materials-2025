@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+
+    <style>
+        body{
+            height: 150vh; /* Set a height to demonstrate scrolling */
+        }
+        .static {
+            position: static; /* Default value */
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .relative {
+            position: relative; /* Positioned relative to its normal position */
+            top: 10px; /* Moves the element down by 10px */
+            left: 20px; /* Moves the element right by 20px */
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 10px 0;
+        }
+      
+        .fixed {
+            position: fixed; /* Positioned relative to the viewport- view port is the visible area of the web page */
+            bottom: 0; /* Sticks to the top of the viewport */
+            right: 0; /* Sticks to the left of the viewport */
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        .relative-positioning {
+            position: relative; /* Positioned relative to its normal position */
+            width: 400px;
+            height: 200px;
+            border: 3px solid green;
+            background-color: lightcoral;
+            
+        }
+
+        .absolute-positioning{
+           position: absolute; 
+           top: 80px;
+           right: 0;
+           width: 200px;
+           height: 100px;
+           background-color: blueviolet;
+           border: 2px solid brown;
+           padding: 5px;
+
+        }
+
+    .sticky-position{
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: blueviolet;
+        border: 2px solid magenta;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+    5 positioning methods:
+    1. static: default value, elements are positioned according to the normal flow of the document.
+    2. relative: elements are positioned relative to their normal position. The top, right, bottom, and left properties offset the element from its normal position.
+    3. absolute: elements are positioned relative to the nearest positioned ancestor (instead of the viewport like fixed). The top, right, bottom, and left properties offset the element from its nearest positioned ancestor.
+    4. fixed: elements are positioned relative to the viewport, which means they stay in the same place even if the page is scrolled. The top, right, bottom, and left properties offset the element from the viewport.
+    5. sticky: elements are positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. The top, right, bottom, and left properties offset the element from its nearest scrolling ancestor.
+    -->
+
+    <h2>CSS Positioning</h2>
+
+      <!-- sticky -->
+      <div class="sticky-position">
+        I am sticky 😂
+     </div>
+
+     <!-- static -->
+    <div class="static">
+        I am a static element. I am positioned according to the normal flow of the document.
+    </div>
+
+    <!-- relative -->
+    <div class="relative">
+        I am a relative element. I am positioned relative to my normal position.
+    </div>
+
+    <!-- fixed -->
+    <div class="fixed">
+        I am a fixed element. I am positioned relative to the viewport.
+        I will stay in the same place even if you scroll.
+    </div>
+
+    <!-- Absolute -->
+    <div class="relative-positioning">
+        I am a relative element. I am positioned relative to my normal position.
+        <div class="absolute-positioning">
+            I am an absolute element. I am positioned relative to my nearest positioned ancestor.
+        </div>
+    </div>
+</body>
+</html>
