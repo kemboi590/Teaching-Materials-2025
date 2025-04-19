@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+
+    <style>
+        /* align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+         Only has an effect with more than one line of content. Examples shown here use flex-wrap. */
+
+         .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: flex-end; /* flex-start | flex-end | center | baseline | stretch */
+            border-color: lightblue;
+            min-height: 500px;
+         }
+
+         .item {
+            background-color: #f1c40f;
+            border: 2px solid #f39c12;
+            padding: 20px;
+            font-size: 30px;
+            min-height: 80px;
+            max-width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div class="item">2 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         </div>
+        <div class="item">3
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </div>
+        <div class="item">4
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.  
+        </div>
+        <div class="item">5
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </div>
+    </div>
+</body>
+</html>

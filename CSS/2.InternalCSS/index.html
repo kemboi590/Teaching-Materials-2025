@@ -1,0 +1,86 @@
+<!-- Internal CSS is used to style a single HTML document. It is defined within the <style> tag in the <head> section of the HTML document. Here is an example of how to use internal CSS: --> 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Internal CSS</title>
+    
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            body{
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+            }
+    
+            nav{
+                background-color: #333;
+                padding: 10px;
+                display: flex;
+                text-align: center;
+                justify-content: space-around;
+                list-style: none;
+            }
+    
+            li{
+                display: inline;
+            }
+    
+            li a{
+                color: white;
+                text-decoration: none;
+                padding: 10px 10px;
+                }
+    
+                li a:hover {
+                border-radius: 10px;
+                background-color: #555;
+                }
+    
+                h2 {
+                    color: #333;
+                    text-align: center;
+                    margin: 10px 0;
+                }
+    
+                p {
+                    color: #666;
+                    font-size: 16px;
+                    line-height: 1.6;
+                    margin: 20px;
+                    text-align: justify;
+                }
+    
+                footer {
+                    background-color: #333;
+                    color: white;
+                    text-align: center;
+                    padding: 10px 0;
+    
+                    position: fixed;
+                    bottom: 0;
+                    width: 100%;
+                }
+                
+        </style>
+    </head>
+    <body>
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </nav>
+    
+        <h2>Welcome to Our Website</h2>
+        <p>This is a sample website to demonstrate the use of internal CSS for styling HTML elements.</p>
+        <footer>
+            <p> 2025 Your Website. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>

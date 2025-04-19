@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        /* align-content: Justifies all grid content on column axis when total grid size is smaller than container.*/
+        .container {
+            display: inline-grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: 100px 100px 100px;
+            grid-gap: 2rem;
+            /*start | end | center | stretch(default)*/
+            align-content: space-around;
+            /*start | end | center | stretch| space-around | space-between | space-evenly*/       
+            justify-content: space-evenly; 
+            background-color: aquamarine;
+            height: 400px;
+            width: 400px;
+        }
+
+        .item {
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            padding: 20px;
+            font-size: 30px;
+            /* text-align: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <!-- <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div> -->
+    </div>
+
+</body>
+
+</html>
