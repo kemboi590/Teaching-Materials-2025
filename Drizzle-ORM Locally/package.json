@@ -1,0 +1,30 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch ./src/index.ts",
+    "build": "tsc",
+    "start": "npm run build && node ./dist/index.js",
+    "generate":"drizzle-kit generate",
+    "migrate":"tsx drizzle/migrate.ts",
+    "studio" : "drizzle-kit studio",
+     "push": " drizzle-kit generate && tsx drizzle/migrate.ts"
+  },
+  "keywords": [],
+  "author": "kemboi",
+  "license": "ISC",
+  "packageManager": "pnpm@10.9.0",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.43.1",
+    "pg": "^8.15.6",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.14",
+    "drizzle-kit": "^0.31.0"
+  }
+}
