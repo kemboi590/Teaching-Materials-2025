@@ -1,11 +1,12 @@
 import express from 'express';
 import user from './auth/auth.router';
-
+import todo from './todos/todo.router';
 const app = express();
 app.use(express.json())
 
 // routes
 user(app)
+todo(app)
 
 // test endpoint
 app.get('/', (req, res) => {
