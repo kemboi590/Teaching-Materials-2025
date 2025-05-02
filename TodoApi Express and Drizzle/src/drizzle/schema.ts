@@ -7,7 +7,8 @@ export const UsersTable = pgTable("users", {
     id: serial("id").primaryKey(),
     firstName: varchar("first_name", { length: 50 }).notNull(),
     lastName: varchar("last_name", { length: 50 }).notNull(),
-    email: varchar("email", { length: 100 }).notNull().unique()
+    email: varchar("email", { length: 100 }).notNull().unique(),
+    password: varchar("password", { length: 255 }).notNull()
 })
 
 // todo table
